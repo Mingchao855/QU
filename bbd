@@ -1,0 +1,42 @@
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local Whitelisted = {
+    ["HYHuiBai"] = true,
+    ["Kadys5373"] = true,
+    ["Xxxx3ghjjg"] = true,
+    ["suedrr4"] = true,
+    ["EKitriney589K5"] = true,
+    ["rxxxssxrrty"] = true,
+    ["WileyJerrys3"] = true,
+    ["pigdognolike"] = true,
+    ["odhdihdjdg"] = true,
+    ["EKitriney589K5"] = true,
+    ["3usisuei"] = true,
+    ["ami007005"] = true,
+    ["12i21777"] = true,
+    ["YEUSDmHmdTy"] = true,
+    ["bf520123"] = true,
+    ["Roa826450"] = true,
+    ["Mike60507"] = true,
+    ["ez_levi01"] = true,
+    ["limyizhesabi"] = true,
+ }
+
+local function IsWhitelisted(player)
+    return Whitelisted[player.Name] or false
+end
+
+local localPlayer = Players.LocalPlayer
+
+local isLocalPlayerWhitelisted = IsWhitelisted(localPlayer)
+
+if isLocalPlayerWhitelisted then
+    StarterGui:SetCore("SendNotification", {
+        Title = "白名單認證",
+        Text = "玩家:"..localPlayer.Name.."，檢查完畢白名單玩家，稍後凌霄2脚本",
+        Duration = 7,
+    })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mingchao855/QU/refs/heads/main/𝓓𝓲𝓬𝓴"))()
+else
+    localPlayer:Kick("你好，你好像還沒有白名單聯係我加白名單吧。我discrod是：_xingchen1 凌霄團dc：https://discord.gg/zc7ANA3M ")
+end
