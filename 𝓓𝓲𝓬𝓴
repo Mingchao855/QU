@@ -4760,11 +4760,11 @@ FastAttackMethodDropdown = Tabs.SettingsTab:Dropdown({
 spawn(function()
     while wait() do
         if _G.Settings.Setting["Fast Attack Mode"] == "Slow" then
-            _G.Settings.Setting["Fast Attack Delay"] = 0.15;
+            _G.Settings.Setting["Fast Attack Delay"] = 0.05;
         elseif _G.Settings.Setting["Fast Attack Mode"] == "Normal" then
-            _G.Settings.Setting["Fast Attack Delay"] = 0.10;
+            _G.Settings.Setting["Fast Attack Delay"] = 0.05;
         elseif _G.Settings.Setting["Fast Attack Mode"] == "Fast" then
-            _G.Settings.Setting["Fast Attack Delay"] = 0.07;
+            _G.Settings.Setting["Fast Attack Delay"] = 0.05;
         elseif _G.Settings.Setting["Fast Attack Mode"] == "Super Fast" then
             _G.Settings.Setting["Fast Attack Delay"] = 0.05;
         end
