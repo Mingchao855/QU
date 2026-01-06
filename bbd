@@ -36,7 +36,7 @@ if isLocalPlayerWhitelisted then
         Text = "玩家:"..localPlayer.Name.."，檢查完畢白名單玩家，稍後凌霄2脚本",
         Duration = 7,
     })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Mingchao855/QU/refs/heads/main/𝓓𝓲𝓬𝓴"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LXHub159/bmd/refs/heads/main/maren"))()
 else
     localPlayer:Kick("你好，你好像還沒有白名單聯係我加白名單吧。我discrod是：_xingchen1 凌霄團dc：https://discord.gg/zc7ANA3M ")
 end
